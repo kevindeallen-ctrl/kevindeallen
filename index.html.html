@@ -137,9 +137,7 @@
       gap: 6rem; align-items: center;
       max-width: 1280px; margin: 0 auto;
     }
-    .book-frame {
-      display: flex; align-items: center; justify-content: center;
-    }
+    .book-frame { display: flex; align-items: center; justify-content: center; }
     .book-cover-img {
       width: 280px;
       box-shadow: -20px 20px 60px rgba(0,0,0,0.8), 4px 0 0 rgba(0,0,0,0.4);
@@ -148,31 +146,18 @@
     .author-body p { color: rgba(240,235,225,0.8); margin-bottom: 1.2rem; font-size: 1rem; }
     .author-body p em { color: var(--gold-lt); font-style: italic; }
     .author-meta {
-      display: flex; gap: 0; margin: 2rem 0;
+      display: flex; margin: 2rem 0;
       padding: 1.5rem 0;
       border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
-      justify-content: center;
-      text-align: center;
     }
     .meta-item {
-      flex: 1;
-      text-align: center;
-      padding: 0 1rem;
+      flex: 1; text-align: center; padding: 0 1rem;
       border-right: 1px solid var(--border);
     }
     .meta-item:last-child { border-right: none; }
-    .meta-num {
-      font-family: "Cormorant Garamond", serif; font-size: 2rem;
-      font-weight: 300; color: var(--gold); line-height: 1;
-      display: block;
-    }
-    .meta-label {
-      font-family: "Cinzel", serif; font-size: 0.5rem;
-      letter-spacing: 0.2em; text-transform: uppercase;
-      color: var(--muted); margin-top: 0.3rem;
-      display: block;
-    }
+    .meta-num { font-family: "Cormorant Garamond", serif; font-size: 2rem; font-weight: 300; color: var(--gold); line-height: 1; display: block; }
+    .meta-label { font-family: "Cinzel", serif; font-size: 0.5rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-top: 0.3rem; display: block; }
     .author-cta { text-align: center; margin-top: 2rem; }
 
     /* ── SPEAKER ── */
@@ -197,8 +182,7 @@
       text-align: center;
     }
     .speaker-content .section-eyebrow,
-    .speaker-content .section-title,
-    .speaker-content .section-rule { width: 100%; }
+    .speaker-content .section-title { width: 100%; }
     .speaker-content .section-rule { margin-left: auto; margin-right: auto; }
     .audience-bar {
       display: inline-block;
@@ -214,8 +198,7 @@
     .audience-bar span { color: var(--gold); margin: 0 0.6rem; }
     .speaker-body {
       color: rgba(240,235,225,0.75); font-size: 0.95rem;
-      margin-bottom: 1.5rem; line-height: 1.7;
-      max-width: 460px;
+      margin-bottom: 1.5rem; line-height: 1.7; max-width: 460px;
     }
     .topics-grid {
       display: grid; grid-template-columns: 1fr 1fr;
@@ -226,14 +209,16 @@
       transition: border-color 0.3s; text-align: left;
     }
     .topic-card:hover { border-color: var(--gold); }
-    .topic-card a { text-decoration: none; }
-    .topic-title {
-      font-family: "Cormorant Garamond", serif; font-size: 1rem;
-      font-weight: 500; color: var(--gold-lt); margin-bottom: 0.4rem;
-    }
+    .topic-title { font-family: "Cormorant Garamond", serif; font-size: 1rem; font-weight: 500; color: var(--gold-lt); margin-bottom: 0.4rem; }
     .topic-title a { color: var(--gold-lt); text-decoration: none; transition: color 0.3s; }
     .topic-title a:hover { color: var(--gold); text-decoration: underline; }
-    .topic-desc { font-size: 0.78rem; color: var(--muted); line-height: 1.5; }
+    .topic-desc { font-size: 0.78rem; color: rgba(240,235,225,0.6); line-height: 1.5; }
+    .speaker-note {
+      font-family: "EB Garamond", serif; font-style: italic;
+      font-size: 0.85rem; color: rgba(240,235,225,0.45);
+      margin-top: 0.5rem; margin-bottom: 1.5rem;
+      width: 100%; text-align: center;
+    }
 
     /* ── ADVISOR ── */
     .advisor-section { background: var(--dark); padding: 8rem 4rem; }
@@ -253,9 +238,10 @@
       top: -12px; left: -12px; right: 12px; bottom: 12px;
       border: 1px solid var(--border); z-index: 0; pointer-events: none;
     }
+    /* Coaching highlight — gold label, no red confusion */
     .coaching-highlight {
-      background: linear-gradient(135deg, rgba(157,34,53,0.12) 0%, rgba(196,163,90,0.06) 100%);
-      border: 1px solid rgba(157,34,53,0.35);
+      background: linear-gradient(135deg, rgba(157,34,53,0.1) 0%, rgba(196,163,90,0.05) 100%);
+      border: 1px solid rgba(157,34,53,0.3);
       padding: 1.6rem 1.8rem; margin-bottom: 2rem; position: relative;
     }
     .coaching-highlight::before {
@@ -265,14 +251,14 @@
     .coaching-label {
       font-family: "Cinzel", serif; font-size: 0.55rem;
       letter-spacing: 0.25em; text-transform: uppercase;
-      color: var(--burgundy); margin-bottom: 0.5rem;
+      color: var(--gold); margin-bottom: 0.5rem;
     }
     .coaching-title {
       font-family: "Cormorant Garamond", serif;
       font-size: 1.3rem; font-weight: 500;
       color: var(--cream); margin-bottom: 0.5rem;
     }
-    .coaching-desc { font-size: 0.88rem; color: rgba(240,235,225,0.7); line-height: 1.6; }
+    .coaching-desc { font-size: 0.88rem; color: rgba(240,235,225,0.75); line-height: 1.6; }
     .coaching-cta {
       display: inline-block; margin-top: 1rem;
       font-family: "Cinzel", serif; font-size: 0.58rem;
@@ -299,7 +285,9 @@
       padding: 0.15rem 0.5rem; margin-left: 0.5rem;
       vertical-align: middle; position: relative; top: -1px;
     }
-    .svc-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.5; }
+    .svc-desc { font-size: 0.85rem; color: rgba(240,235,225,0.68); line-height: 1.6; }
+    .svc-desc a { color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(196,163,90,0.4); transition: border-color 0.3s; }
+    .svc-desc a:hover { border-color: var(--gold); }
 
     /* ── PRIVATE ENGAGEMENTS ── */
     .private-section { background: var(--black); padding: 8rem 4rem; text-align: center; }
@@ -319,11 +307,7 @@
     }
     .footer-brand .nav-logo { font-size: 0.9rem; display: block; margin-bottom: 1rem; }
     .footer-brand p { font-size: 0.85rem; color: var(--muted); line-height: 1.7; }
-    .footer-col h4 {
-      font-family: "Cinzel", serif; font-size: 0.58rem;
-      letter-spacing: 0.25em; text-transform: uppercase;
-      color: var(--gold); margin-bottom: 1.2rem;
-    }
+    .footer-col h4 { font-family: "Cinzel", serif; font-size: 0.58rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem; }
     .footer-col ul { list-style: none; }
     .footer-col ul li { margin-bottom: 0.6rem; }
     .footer-col ul li a { font-size: 0.85rem; color: var(--muted); text-decoration: none; transition: color 0.3s; }
@@ -336,11 +320,7 @@
       font-family: "Cinzel", serif; letter-spacing: 0.1em;
     }
     .social-links { display: flex; gap: 1.5rem; }
-    .social-links a {
-      color: var(--muted); text-decoration: none;
-      font-family: "Cinzel", serif; font-size: 0.6rem;
-      letter-spacing: 0.15em; transition: color 0.3s;
-    }
+    .social-links a { color: var(--muted); text-decoration: none; font-family: "Cinzel", serif; font-size: 0.6rem; letter-spacing: 0.15em; transition: color 0.3s; }
     .social-links a:hover { color: var(--gold); }
 
     /* ── RESPONSIVE ── */
@@ -399,22 +379,10 @@
         <p>Most wealth isn't lost to bad markets or poor timing. It's lost to the invisible cognitive biases that distort how ultra-privileged families think, decide, and govern themselves — generation after generation.</p>
         <p><em>Blind Spots of Wealth</em> is the essential field guide for ultra-privileged families, family offices, and the advisors who serve them. Drawing on 30 years of behavioral science and private advisory work, Kevin DeAllen names the 20 cognitive biases that silently undermine family fortunes — and shows exactly how to break their hold.</p>
         <div class="author-meta">
-          <div class="meta-item">
-            <span class="meta-num">30+</span>
-            <span class="meta-label">Years Advisory</span>
-          </div>
-          <div class="meta-item">
-            <span class="meta-num">20</span>
-            <span class="meta-label">Wealth Biases</span>
-          </div>
-          <div class="meta-item">
-            <span class="meta-num">3</span>
-            <span class="meta-label">Generations</span>
-          </div>
-          <div class="meta-item">
-            <span class="meta-num">1</span>
-            <span class="meta-label">Framework</span>
-          </div>
+          <div class="meta-item"><span class="meta-num">30+</span><span class="meta-label">Years Advisory</span></div>
+          <div class="meta-item"><span class="meta-num">20</span><span class="meta-label">Wealth Biases</span></div>
+          <div class="meta-item"><span class="meta-num">3</span><span class="meta-label">Generations</span></div>
+          <div class="meta-item"><span class="meta-num">1</span><span class="meta-label">Framework</span></div>
         </div>
         <div class="author-cta">
           <a href="https://www.blindspotsofwealth.com" target="_blank" class="btn btn-solid">Request an Advance Copy</a>
@@ -453,7 +421,8 @@
             <div class="topic-desc">Paths to the desires of your heart</div>
           </div>
         </div>
-        <a href="#contact" class="btn" style="margin-top:0.5rem;">Inquire About Speaking</a>
+        <p class="speaker-note">Also available for corporate teams, family offices, and wealth advisory groups.</p>
+        <a href="#contact" class="btn">Inquire About Speaking</a>
       </div>
     </div>
   </section>
@@ -467,14 +436,12 @@
         <h2 class="section-title">For the decisions<br><em>you can't afford to get wrong.</em></h2>
         <div class="section-rule"></div>
         <p style="color:rgba(240,235,225,0.75);margin-bottom:2rem;font-size:0.95rem;">As a Senior Birkman Consultant since 1994 and Family Leadership Advisor to some of the most influential families in America, Kevin DeAllen works at the intersection of behavioral science, generational wealth, and family governance.</p>
-
         <div class="coaching-highlight">
           <div class="coaching-label">Primary Engagement</div>
           <div class="coaching-title">Private Executive Coaching</div>
           <div class="coaching-desc">One-on-one coaching for executives, family patriarchs and matriarchs, and rising generation leaders navigating the weight of wealth, influence, and legacy — with full discretion and complete candor.</div>
           <a href="#contact" class="coaching-cta">Inquire about coaching &rarr;</a>
         </div>
-
         <ul class="services-list">
           <li>
             <span class="svc-icon">◆</span>
@@ -486,11 +453,8 @@
           <li>
             <span class="svc-icon">◆</span>
             <div>
-              <span class="svc-name">
-                Partners &amp; Power Couples
-                <span class="svc-badge">App</span>
-              </span>
-              <span class="svc-desc">Behavioral intelligence for couples navigating wealth, legacy, and influence together — powered by the <a href="https://thebirkmanexchange.com" target="_blank" style="color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(196,163,90,0.4);">TBX Power Couples Index</a>, an AI-driven compatibility and relationship intelligence platform</span>
+              <span class="svc-name">Partners &amp; Power Couples <span class="svc-badge">App</span></span>
+              <span class="svc-desc">Behavioral intelligence for couples navigating wealth, legacy, and influence together — powered by the <a href="https://thebirkmanexchange.com" target="_blank">TBX Power Couples Index</a>, an AI-driven compatibility and relationship intelligence platform</span>
             </div>
           </li>
           <li>
@@ -503,7 +467,7 @@
           <li>
             <span class="svc-icon">◆</span>
             <div>
-              <span class="svc-name"><a href="https://www.boardroomconductor.com/" target="_blank">The Boardroom Conductor</a></span>
+              <span class="svc-name"><a href="https://www.boardroomconductor.com/" target="_blank">The Conductor in the Boardroom</a> <span class="svc-badge">App</span></span>
               <span class="svc-desc">Leadership development for board chairs — behavioral science meets governance excellence, designed for those who set the tempo for the entire room</span>
             </div>
           </li>
